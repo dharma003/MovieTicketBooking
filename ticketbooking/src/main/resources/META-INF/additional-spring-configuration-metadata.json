@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "discount.percentage",
+    "type": "java.lang.String",
+    "description": "A description for 'discount.percentage'"
+  },
+  {
+    "name": "price.firstclass",
+    "type": "java.lang.String",
+    "description": "A description for 'price.firstclass'"
+  },
+  {
+    "name": "price.secondclass",
+    "type": "java.lang.String",
+    "description": "A description for 'price.secondclass'"
+  },
+  {
+    "name": "price.balcony",
+    "type": "java.lang.String",
+    "description": "A description for 'price.balcony'"
+  }
+]}

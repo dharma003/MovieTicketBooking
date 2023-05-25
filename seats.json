@@ -1,0 +1,24 @@
+[{
+  "_id": 1,
+  "movieName": "A",
+  "seatsCount": 1000,
+  "availableSeats": 800,
+  "_class": "com.org.ticket.booking.model.Seats"
+},{
+  "_id": {
+    "$oid": "643bfd8d50e5543c2d456bcc"
+  },
+  "movieName": "B",
+  "seatsCount": 1000,
+  "availableSeats": 800,
+  "_class": "com.org.ticket.booking.model.Seats"
+},{
+  "_id": {
+    "$oid": "643bfe312fbb9e41cf420143"
+  },
+  "theatreId": "3",
+  "movieName": "BA",
+  "seatsCount": 1000,
+  "availableSeats": 800,
+  "_class": "com.org.ticket.booking.model.Seats"
+}]

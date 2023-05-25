@@ -1,0 +1,7 @@
+discount:
+ percentage: 20 
+
+price: 
+ firstclass: 250
+ secondclass: 200
+ balcony: 300  

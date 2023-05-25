@@ -1,0 +1,5 @@
+discount:
+ percentage: 20 
+ 
+server: 
+ port: 9999 

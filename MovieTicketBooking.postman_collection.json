@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "1f2f8f6a-f6ec-4f3d-9b54-e1713ccd9b94",
+		"name": "MovieTicketBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2101368"
+	},
+	"item": [
+		{
+			"name": "OnboardTheatre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"theatreName\":\"PVR\",\"city\":\"chennai\",\"seatsCapacity\":200,\"firstClass\":50,\"secondClass\":100,\"deluxe\":50,\"screensCount\":5,\"tenantName\":\"pvr\",\"movieList\":[{\"movieName\":\"Avathar\",\"launguage\":\"Tamil\",\"avilability\":\"Yes\",\"endDate\":\"2023-04-20\",\"startDate\":\"2023-04-15\",\"screenName\":\"S2\",\"showTime\":\"Afternoon\"},{\"movieName\":\"Avathar2\",\"launguage\":\"English\",\"avilability\":\"Yes\",\"endDate\":\"2023-04-20\",\"startDate\":\"2023-04-15\",\"screenName\":\"S3\",\"showTime\":\"Afternoon\"}]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/onboardtheatre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"onboardtheatre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchCinemas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"theatreName\":\"Inox\",\"location\":\"chennai\",\"bookingDate\":\"2023-04-15\",\"movieName\":200,\"mobileNumber\":8977777777,\"showTime\":\"Afternoon\",\"movieLaunguage\":\"english\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/searchmovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchmovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckAvailability",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/checkAvailability?movieName=\"BA\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkAvailability"
+					],
+					"query": [
+						{
+							"key": "movieName",
+							"value": "\"BA\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"theatreName\":\"Inox\",\"location\":\"chennai\",\"bookingDate\":\"2023-04-15\",\"movieName\":200,\"mobileNumber\":8977777777,\"showTime\":\"Afternoon\",\"movieLaunguage\":\"english\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ticketBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ticketBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertTheatreSeats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"theatreId\":1,\"movieName\":\"A\",\"seatsCount\":1000,\"availableSeats\":800}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveSeats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveSeats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
